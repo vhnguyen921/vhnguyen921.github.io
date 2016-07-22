@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf=8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+	body {
+		background-image:url(http://i1126.photobucket.com/albums/l620/vhnguyen921/sunset1_zpsn3dzazjt.jpg); width=100%;
+		background-size:cover;
+		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New";
+		padding-right:30px;
+		padding-left:30px;
+}
+	
+	header {
+		background-color: transparent;
+		margin: 0px auto;
+		font-size: 25px;
+		max-height:150px;
+		height: 140px;
+		width:80%;
+		min-width:300px;
+		max-width:100%
+}
+
+	.toptext {
+		font-size: 60px;
+		color: #7B5955;
+		text-align: center;
+		font-family: 'Pacifico', cursive;
+		display:inline-block;
+		width:45%;
+		
+}
+	.logo {
+		width: 85px;
+		position: relative;
+		display: inline-block;
+		top: 30px;
+		bottom: 0px;
+		opacity: 0.8;
+}
+	.button {
+		background-color: #7B5955;
+		padding: 25px;
+		padding-right: 35px;
+		/*transform: translate(800px,-100px);*/
+		width: 85px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 30px;
+		display:inline-block;
+
+}
+	.button2 {
+		background-color: #7B5955;
+		padding: 25px;
+		padding-right: 35px;
+		/*transform: translate(950px,-180px);*/
+		width: 85px;
+		display:inline-block;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 30px;
+}
+	
+	a {
+		text-decoration: none;
+		color: black;
+		padding-top: 15px;
+		
+}
+	
+	a:hover {
+		color: white;
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		
+}
+		
+
+	.biography {
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+		overflow-y: auto;
+		border: 2px dashed white;
+		border-width: thin;
+		color: #FBD8D4;
+		float: center;
+		margin: 0px auto;
+		min-width: 300px;
+		width: 60%;
+		height:400px;
+		max-height:500px;
+		padding: 50px;
+		font-size: 30px;
+		font-family: 'Bree Serif', serif;
+		text-align: left;
+		
+		
+}
+	.biography:hover {
+		opacity: 1;
+		filter: alpha(opacity=100);
+}
+	
+	.curve { 
+ 	 	min-width: 150px;
+  		float: left;
+ 		margin-right:2rem; 
+  		border-radius: 50%;
+  		-webkit-shape-outside:circle();
+ 		 shape-outside:circle();
+}
+	
+	::-webkit-scrollbar {
+   		width: 12px;
+		height:300px;
+}
+ 
+	::-webkit-scrollbar-track {
+    	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    	border-radius: 10px;
+}
+ 
+	::-webkit-scrollbar-thumb {
+    	border-radius: 10px;
+    	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6); 
+}
+	::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(0,100,200,0.4);
+}
+</style>
+<script>
+	window.onresize = function(){
+		var resize = doc.getElementById("resize")
+		var w = window.innerWidth;
+		
+		if (w<953){
+			x.innerHTML="_""<p>_</p>"
+		} else {
+			x.innerHTML="";
+		}}
+</script>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
+
+<body>
+<header>
+	<div id="resize"></div>
+    <div class="toptext">Van Nguyen</div>
+    <div class="logo"><a href="http://www.bls.org/" target="_blank"><img src="logo.gif" width="85" height="85"/></a></div>
+    <div class="button" style="align:center;"><a href="#">Contact</a></div>
+    <div class="button2" style="align:center;"><a href="#">Hobbies</a></div>
+    
+</header>
+<div class="biography"><h1>Contact Info</h1></div>
+        <!--script type="text/javascript">
+		function myFunction(){
+				var image = document.getElementById("datme");
+				if(image.src.match("me.jpg")){
+					image.src = 'me1.gif';
+				} else {
+					image.src = 'me.jpg';
+					console.log("aksjdfhl");
+				}}
+		</script-->
+	
+    <!--div class="container-text"> <h1>Hello,<br>a bit about me</h1></div>
+    	<!--img src="me.jpg" id="datme" onClick="myFunction()" width="300" height="auto"/-->
+</body>
+
+
+
+</html>
