@@ -8,7 +8,7 @@
 	body {
 		background-image:url(http://i1126.photobucket.com/albums/l620/vhnguyen921/sunset1_zpsn3dzazjt.jpg); width=100%;
 		background-size:cover;
-		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New";
+		font-family: "Lucida Grande", 'Pacifico', cursive;
 		padding-right:30px;
 		padding-left:30px;
 }
@@ -41,8 +41,9 @@
 		bottom: 0px;
 		opacity: 0.8;
 }
-	.button {
-		background-color: #7B5955;
+	.contact {
+		background-color: white;
+		opacity: 0.5;
 		padding: 25px;
 		padding-right: 35px;
 		/*transform: translate(800px,-100px);*/
@@ -53,8 +54,13 @@
 		display:inline-block;
 
 }
-	.button2 {
-		background-color: #7B5955;
+	.contact:hover {
+		opacity: 0.4;
+		
+}
+	.hobbies {
+		background-color: white;
+		opacity: 0.5;
 		padding: 25px;
 		padding-right: 35px;
 		/*transform: translate(950px,-180px);*/
@@ -64,19 +70,19 @@
 		-webkit-border-radius: 6px;
 		border-radius: 30px;
 }
-	
+	.hobbies:hover {
+		opacity: 0.4;
+}
 	a {
 		text-decoration: none;
-		color: black;
-		padding-top: 15px;
+		color: #7B5955;
+		padding-top: 10px;
 		
 }
 	
 	a:hover {
-		color: white;
 		opacity: 0.4;
 		filter: alpha(opacity=40);
-		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 		
 }
 		
@@ -152,10 +158,10 @@
 <body>
 <header>
 	<div id="resize"></div>
-    <div class="toptext">Van Nguyen</div>
+     <div class="toptext"><a href="myWebpage.html">Van Nguyen</a></div>
     <div class="logo"><a href="http://www.bls.org/" target="_blank"><img src="logo.gif" width="85" height="85"/></a></div>
-    <div class="button" style="align:center;"><a href="#">Contact</a></div>
-    <div class="button2" style="align:center;"><a href="#">Hobbies</a></div>
+    <div class="contact" style="align:center;"><a href="contactpage.html">Contact</a></div>
+    <div class="hobbies" style="align:center;"><a href="#">Hobbies</a></div>
     
 </header>
 <div class="biography"> <img src="me1.gif" width="300" height="auto" class="curve"/>
