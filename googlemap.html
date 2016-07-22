@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+
+<style>
+body {
+	background-color: #648D98;
+}
+
+.container {
+	background-color: #6B4141;
+	border-style: outset;
+	height: 500px;
+	width: 900px;
+	margin: auto;
+	padding: 50px;
+	padding-top: 15px;
+	color: #E0E6A7;
+	text-align: center;
+	font-family: Pacifico;
+	font-size: 36px;
+}
+
+#map {
+	background-color:grey;
+    width: 80%;
+    height: 400px;
+	margin: auto;
+ }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<body>
+<div class="container">
+	<p>Where will I be having dinner?</p>
+<div id="map"></div>
+    <script>
+	function initMap() {
+	var myLatLng = {lat: 39.978, lng: 39.493};
+    var mapDiv = document.getElementById("map");
+    var map = new google.maps.Map(mapDiv, {
+            center: myLatLng,
+            zoom: 2
+	});
+  	var marker = new google.maps.Marker({
+   		map: map,
+		animation: google.maps.Animation.DROP,
+		position: {lat: 42.349, lng: -71.083},
+    	title: 'Beantown'
+  		});
+	var marker2 = new google.maps.Marker({
+   		map: map,
+		animation: google.maps.Animation.DROP,
+		position: {lat: 42.345, lng: -71.081},
+    	title: 'Cheesecake Factory'
+		});
+	var marker3 = new google.maps.Marker({
+		map: map,
+		animation: google.maps.Animation.DROP,
+		position: {lat: 35.678, lng: 139.692},
+		title: 'Himalaya Curry'
+  		});
+		
+	marker.addListener('click', toggleBounce);
+	marker2.addListener('click', toggleBounce2);
+	marker3.addListener('click', toggleBounce3);
+	
+	 function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+	  function toggleBounce2() {
+        if (marker2.getAnimation() !== null) {
+          marker2.setAnimation(null);
+        } else {
+          marker2.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+	  function toggleBounce3() {
+        if (marker3.getAnimation() !== null) {
+          marker3.setAnimation(null);
+        } else {
+          marker3.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+	}
+	 </script>
+     <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+     </script>
+</div>
+</body>
+</html>
